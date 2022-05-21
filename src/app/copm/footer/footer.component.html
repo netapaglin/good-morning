@@ -1,0 +1,18 @@
+<div class="footer" >
+  <div id="setTime">
+    <app-time-picker [dadLine]="this.dadLine" (timeEvent)="receiveMessage($event)"></app-time-picker>
+  </div>
+
+  <table>
+    <tr>
+        <th><p>השעה עכשיו</p></th>
+        <th><p>?כמה זמן נשאר</p></th>
+
+    </tr>
+    <tr >
+      <td id="time"><p >{{ time }}</p></td>
+      <td id="count"><app-count-down id="count" [dadLine]="this.dadLine"></app-count-down></td>
+
+    </tr>
+  </table>
+</div>

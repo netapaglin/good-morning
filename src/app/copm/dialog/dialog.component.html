@@ -1,0 +1,15 @@
+<button mat-button mat-dialog-close>X</button>
+  <mat-dialog-content class="mat-typography">
+    <h1>{{success}}</h1>
+  </mat-dialog-content>
+  <mat-dialog-actions id="container">
+    <iframe
+    width="560"
+    height="315"
+    [src]="song"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</mat-dialog-actions>

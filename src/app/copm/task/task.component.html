@@ -1,0 +1,11 @@
+<mat-card class="task-card">
+  <mat-card-title >{{ task.body }}</mat-card-title>
+
+  <button
+    (click)="del(task)"
+    mat-icon-button
+    aria-label="Example icon button with a vertical three dot icon"
+  >
+    <mat-icon>done</mat-icon>
+  </button>
+</mat-card>

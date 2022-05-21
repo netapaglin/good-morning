@@ -1,0 +1,26 @@
+
+
+  .timer {
+    text-align: right;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    height: 110%;
+
+   /* margin-bottom: 60px; */
+  }
+  .timer span {
+    font-size: 2em;
+    margin: 0 3px 0 15px;
+    float: left;
+  }
+  .timer span p{
+    font-size: 0.5em;
+    margin-top: 20%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .timer {
+      display: none;
+    }
+  }

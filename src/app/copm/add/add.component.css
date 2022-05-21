@@ -1,0 +1,61 @@
+.task-card{
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(227, 19, 192);
+  position: relative;
+  border-radius: 30px;
+}
+
+button{
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  background-color: rgba(230, 72, 236, 0.021);
+}
+
+
+input{
+  color:brown;
+  background-color: rgba(230, 72, 236, 0.032);
+}
+
+mat-label{
+  color: rgb(252, 252, 252);
+}
+
+mat-form-field.mat-form-field {
+  font-size: 16px;
+  width: 100%;
+  border-radius: 30px;
+  color: black;
+  text-align: right;
+ }
+
+ @media only screen and (max-width: 600px) {
+
+  .task-card {
+    margin: 15px;
+    height: 100px;
+    width: 250px;
+  }
+
+  #addTask{
+    margin-left: 45px;
+    width: 85%;
+
+  }
+
+  button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+  }
+
+}
+

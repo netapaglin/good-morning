@@ -1,0 +1,16 @@
+<mat-card class="task-card">
+  <form [formGroup]="form">
+    <mat-form-field id="addTask" appearance="fill">
+      <mat-label>משימה נוספת</mat-label>
+      <input matInput type="text" [(ngModel)]="task" name="name" formControlName="name" />
+    </mat-form-field>
+    <button
+    [disabled]="!task"
+      (click)="add()"
+      mat-icon-button
+      aria-label="Example icon button with a vertical three dot icon"
+    >
+      <mat-icon>add</mat-icon>
+    </button>
+  </form>
+</mat-card>

@@ -1,0 +1,24 @@
+
+<button id="close"  mat-button mat-dialog-close>X</button>
+<div class="form">
+<form class="example-form"  [formGroup]="form" (ngSubmit)="change()">
+  <div style="text-align:center">
+  <mat-form-field class="example-full-width" appearance="fill">
+
+    <mat-label>שם</mat-label>
+    <input type="text" matInput  name="childName" formControlName="childName" placeholder="שם הילד.ה">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>משפט הצלחה</mat-label>
+    <input  type="text" matInput name="encouragement" formControlName="encouragement" placeholder="משפט הצלחה">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>העתקת סרטון</mat-label>
+    <input  type="text" matInput  name="movie" formControlName="movie" placeholder='העתקת הכתובת מכפתור ה"שיתוף" מתחת לסרטון היו-טיוב' >
+  </mat-form-field>
+  <button  mat-button mat-dialog-close type="submit"  value="change" >change</button>
+</div>
+</form>
+</div>
+
+

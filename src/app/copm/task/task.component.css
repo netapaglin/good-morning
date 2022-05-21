@@ -1,0 +1,56 @@
+.task-card {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  position: relative;
+  border-radius: 30px;
+}
+
+
+mat-card-title {
+  padding-top: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: x-large;
+  text-align: center;
+  color: black;
+}
+
+button {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: black;
+  background-color: rgb(231, 72, 236);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .task-card {
+    margin: 15px;
+    height: 100px;
+    width: 250px;
+  
+  }
+
+  mat-card-title {
+    margin: 60px;
+    width: 150px;
+    padding-right: 0px;
+    text-align: right;
+    padding-top: 25px;
+    font-size: large;
+  }
+
+  button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+  }
+
+}
