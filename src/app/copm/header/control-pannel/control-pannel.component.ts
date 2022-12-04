@@ -18,7 +18,6 @@ export class ControlPannelComponent implements OnInit {
 
   constructor(private config:ConfigService) { }
 
-
   ngOnInit(): void {
     try {
       this.form = new FormGroup({
@@ -26,14 +25,12 @@ export class ControlPannelComponent implements OnInit {
         encouragement: new FormControl('', [Validators.minLength(3)]),
         movie: new FormControl('', [Validators.minLength(3)])
       });
-     
+
     }
     catch (err: any) {
       console.log(err);
     }
   }
-
-  nameFormControl = new FormControl('');
 
   public change() {
     this.config.changeChildName(this.form.value.childName)

@@ -1,20 +1,24 @@
 .task-card{
   margin: 20px;
-  height: 200px;
-  width: 200px;
-  background-color: rgb(227, 19, 192);
+  height: 180px;
+  width: 180px;
+  background-color: #fec0c9;
+  border-radius: 40px;
   position: relative;
-  border-radius: 30px;
 }
 
-button{
+.task-card mat-label{
+  color: #242622;
+}
+
+.task-card button{
   margin: 0;
   position: absolute;
   top: 70%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  color: rgb(0, 0, 0);
+  color: #242622;
   background-color: rgba(230, 72, 236, 0.021);
 }
 
@@ -47,14 +51,13 @@ mat-form-field.mat-form-field {
   #addTask{
     margin-left: 45px;
     width: 85%;
-
   }
 
-  button {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 15%;
+  .task-card button {
+    position: relative;
+    left: 8%;
+    transform: translate(-50%, -160%);
+    color: black;
   }
 
 }

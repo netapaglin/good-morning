@@ -4,6 +4,7 @@ import { BehaviorSubject, Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ConfigService {
 
   constructor() { }
@@ -21,14 +22,12 @@ export class ConfigService {
     this.doneMessageSource.next(message)
   }
 
+  public defaultVideo:string ='https://www.youtube.com/embed/QB8NuvDML2I'
   public editSong: any = [];
   private songSource = new BehaviorSubject(this.editSong);
   currentSong = this.songSource.asObservable();
   changeSong(message: string) {
-    this.songSource.next(message)
+    this.songSource.next(message?message: this.defaultVideo)
   }
-
-
-
 
 }

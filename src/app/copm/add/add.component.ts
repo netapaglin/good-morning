@@ -17,14 +17,8 @@ export class AddComponent implements OnInit {
   public task:Task
   public form:FormGroup;
 
-  // options: FormGroup;
-  // fontSizeControl: any;
-  // colorControl = new FormControl('blue');
-
-
   constructor(
     public _data:GeneralService,
-
   ) {
 
    }
@@ -41,11 +35,8 @@ export class AddComponent implements OnInit {
 
  add(){
   const input = this.form.value;
-   console.log(input)
    this._data.addTask(input.name)
    this.form.reset();
  }
-
-
 
 }

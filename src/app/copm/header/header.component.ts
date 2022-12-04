@@ -9,7 +9,7 @@ import { ControlPannelComponent } from './control-pannel/control-pannel.componen
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  public name:any;
+  public name:string;
 
   constructor(public dialog: MatDialog, private config:ConfigService) { }
 
@@ -18,13 +18,7 @@ export class HeaderComponent implements OnInit {
   }
 
   public openControl(){
-
-      const dialogRef = this.dialog.open(ControlPannelComponent, { panelClass: 'custom-dialog-container' });
-
-      dialogRef.afterClosed().subscribe(result => {
-        console.log(`Dialog result: ${result}`);
-      });
-
+     this.dialog.open(ControlPannelComponent, { panelClass: 'custom-dialog-container' });
   }
 
 }

@@ -1,10 +1,9 @@
 .task-card {
   margin: 20px;
-  height: 200px;
-  width: 200px;
-  background-color: white;
-  position: relative;
-  border-radius: 30px;
+  height: 180px;
+  width: 180px;
+  background-color: #ff90a6;
+  border-radius: 40px;
 }
 
 
@@ -13,7 +12,7 @@ mat-card-title {
   font-family: 'Open Sans', sans-serif;
   font-size: x-large;
   text-align: center;
-  color: black;
+  color: #242622;
 }
 
 button {
@@ -24,7 +23,7 @@ button {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: black;
-  background-color: rgb(231, 72, 236);
+  background-color: #fccbd2;
 }
 
 
@@ -34,7 +33,7 @@ button {
     margin: 15px;
     height: 100px;
     width: 250px;
-  
+
   }
 
   mat-card-title {

@@ -5,9 +5,7 @@
     <mat-label>בחירת שעת יציאה</mat-label>
 
     <input matTimepicker #t="matTimepicker" #time="ngModel" [strict]="false" id="timepicker-example" mode="24h"
-      [ngModel]="defaultValue" name="times" (timeChange)="timeChangeHandler($event)"
-      (invalidInput)="invalidInputHandler()" ><span *ngIf="defaultTime">{{dadLine | date:'shortTime'}}</span>
-    <!-- An icon for the timepicker input that will open the timepicker dialog when clicked -->
-    <mat-icon matSuffix (click)="t.showDialog()">access_time</mat-icon>
+      [ngModel]="defaultValue" name="times" (timeChange)="timeChangeHandler($event)"><span *ngIf="defaultTime">{{dadLine | date:'shortTime'}}</span>
+      <mat-icon matSuffix (click)="t.showDialog()">access_time</mat-icon>
   </mat-form-field>
 </div>

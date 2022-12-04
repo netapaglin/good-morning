@@ -1,12 +1,33 @@
 .main{
-  margin-top: 120px;
+  width: 100%;
+  min-height: 100%;
+  max-height: max-content;
+  background-color: #fbe7e6;
+  border-radius: 110px 110px 110px 110px;
+  position: absolute;
+}
+
+.tasks{
+  position: relative;
+   top: 20px;
   display: flex;
   flex-wrap: wrap;
-  height: 200%;
+  justify-content: flex-start;
+  margin-bottom: 150px;
+
 }
+
 @media only screen and (max-width: 600px) {
   .main{
     margin-top: 100px;
     justify-content: center;
   }
+
+  .tasks{
+
+    justify-content: center;
+
+
+  }
+
 }

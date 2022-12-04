@@ -1,6 +1,9 @@
 <div class="main">
-  <app-task *ngFor="let task of _data.TasksArr" [task]="task">{{
-    task.body
-  }}</app-task>
-  <app-add></app-add>
+    <div class="tasks">
+      <app-task  *ngFor="let task of _data.TasksArr" [task]="task">{{
+        task.body
+      }}</app-task>
+      <app-add></app-add>
+    </div>
 </div>
+

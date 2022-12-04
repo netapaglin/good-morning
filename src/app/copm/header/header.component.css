@@ -1,15 +1,28 @@
-
+.top{
+  background-color: #74cddd;
+  height: 30%;
+  position: relative;
+}
 
 h1{
+  width: 100%;
   text-align: center;
+  position: absolute;
   font-size:60px;
+  top: 50%;
+  transform: translateY(-50%);
   color: white;
 }
 
-.icon-display{
+button .icon-display{
   transform: scale(2);
-  color: white;
+  color: #feca38;
   margin: 100%;
+}
+
+button{
+  position: fixed;
+  z-index: 99;
 }
 
 @media only screen and (max-width: 600px) {
@@ -18,10 +31,8 @@ h1{
   }
 
   h1{
-    font-size:30px;
-    /* position: fixed; */
-    margin-top: -28px;
-    /* margin: -7%; */
+    font-size:50px;
+    margin-top: 12%;
   }
 
 }

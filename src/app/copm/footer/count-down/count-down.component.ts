@@ -7,19 +7,15 @@ import { Subscription, interval } from 'rxjs';
   styleUrls: ['./count-down.component.css']
 })
 export class CountDownComponent implements OnInit {
-  private subscription: Subscription;
+  public subscription: Subscription;
   @Input() dadLine: any;
-
   private defaultDadLine:any = 'Jan 29 2032 06:35:00'
-
-
   public dateNow = new Date();
   public dDay = new Date();
 
   ngOnChanges(changes:any) {
     this.dDay = new Date(this.dadLine)
     this.dDay.setFullYear(2033)
-    console.log(this.dadLine)
   }
 
   milliSecondsInASecond = 1000;
@@ -33,9 +29,7 @@ export class CountDownComponent implements OnInit {
   public hoursToDday;
   public daysToDday;
 
-
   private getTimeDifference () {
-
       this.timeDifference = this.dDay.getTime() - new Date().getTime();
       this.allocateTimeUnits(this.timeDifference);
   }

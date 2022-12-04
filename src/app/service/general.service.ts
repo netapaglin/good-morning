@@ -26,9 +26,7 @@ export class GeneralService {
 
   deleteTask(value){
     const index: number = this.TasksArr.indexOf(value);
-    console.log(index)
     this.TasksArr.splice(index,1)
   }
-
 
 }

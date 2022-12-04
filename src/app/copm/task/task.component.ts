@@ -15,15 +15,12 @@ export class TaskComponent implements OnInit {
     public _data:GeneralService,
     public dialog: MatDialog
   ) { }
+
   @Input()
   task:Task
 
   openDialog() {
-    const dialogRef = this.dialog.open(DialogComponent, { panelClass: 'custom-dialog-container' });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
+    this.dialog.open(DialogComponent, { panelClass: 'custom-dialog-container' });
   }
 
   ngOnInit(): void {
@@ -35,6 +32,7 @@ export class TaskComponent implements OnInit {
       this.openDialog()
     }
   }
+
 
 }
 
